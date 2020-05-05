@@ -1,0 +1,110 @@
+/*
+* @map笔记
+*
+*/
+
+/* 头部 */
+.navTxt{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+body{
+    margin-top: 70px;
+}
+
+/* 广告 */
+.acption{
+    height: 157px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.acption img{
+    width: 100%;
+    height: 157px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.acption span{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 30px;
+}
+.acption > span > a{
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 中间文档 */
+
+.content_pics{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.content_pics-list{
+    padding: 5px;
+}
+.hr{
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid black;
+}
+
+.content_pics-item{
+    width: 100%; 
+    margin-bottom: 20px;
+    padding:10px 40px 20px 40px;
+    background: #ffffff;
+    border-radius: 0 0 10px 10px; 
+
+}
+.content_pics-item div{
+    display: none;
+}
+.content_pics-item .active{
+    display: block;
+    width: 100%; 
+}
+
+/*最后部分 */
+footer{
+    width: 100%;
+    height: 40px;   
+    background: #333333;   
+}
+footer p{
+    text-align: center;
+    line-height: 40px;
+}
+footer > p > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.top a{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+}
+.top a img{
+    width: 50px;
+    height: 50px;
+}

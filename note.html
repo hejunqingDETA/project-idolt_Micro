@@ -1,0 +1,2483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>微论笔记</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="./css/note.css">
+</head>
+<body>
+     <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menulist">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><h1 class="navTxt">IDOLT微论言</h1></a>
+            </div>
+            <div class="collapse navbar-collapse" id="menulist">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" >网站首页</a></li>
+                    <li><a href="note.html" style="color: #ffffff;">微论笔记</a></li>
+                    <li><a href="knowledge.html">学无止境</a></li>
+                    <li><a href="demo.html">微论留言</a></li>
+                    <li><a href="">关于我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 广告 -->
+    <div class="container">
+        <div class="row">
+            <div class="acption col-lg-4 col-md-4">
+                <img src="./img/sement1.jpg" alt="">
+                <span>
+                    <a href="">
+                        【匆匆那些年】总结个人博客经历的这四年
+                    </a>
+                </span>
+            </div> 
+            <div class="acption col-lg-4 col-md-4">
+                <img src="./img/sement2.jpg" alt="">
+                <span>
+                    <a href="">
+                        个人博客，属于我的小世界！
+                    </a>
+                </span>
+            </div>
+            <div class="acption col-lg-4 col-md-4 ">
+                <img src="./img/sement3.jpg" alt="">
+                <span>
+                    <a href="">
+                        安静地做一个爱设计的女子
+                    </a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 笔记 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="content_pics">
+                    <div class="content_pics-list">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active"><a href="#">基础学习【JS】</a></li>
+                            <li><a href="#">深入学习【JS】</a></li>
+                            <li><a href="#">面对对象【JS】</a></li>
+                            <li><a href="#">DOM操作【JS】</a></li>
+                            <li><a href="#">工厂模式【JS】</a></li>
+                        </ul>
+                    </div>
+                    <div class="content_pics-item">
+                       <div class="active">
+                            <h2>JavaScript概述：</h2>
+                            <br>
+                            <ul>
+                            <li><p>js被称为客户端语言 后台语言被称为是服务端语言
+                            前端后端分离在2014年，前端岗位诞生</p></li>
+                            <li><p>晚期：（after2015）透过ajax技术 实现前后端分离 在配合 Vue React angle</p></li>
+                            <li><p>手机端（HTML5/CSS3/ES6 ->JS的第六代版本）：原生APP（native APP）->(HTML5网页技术) wap网页 ->hybird（混合开发模式）</p></li>
+                            </ul>
+                            <h2>变量</h2>
+                            <br>
+                            <p><strong>所谓常量就是可以变的量 所谓的常量就是不可以变的量</strong></p>
+                            <br>
+                            <p>常量写法：const PI = 3.1415926;</p>
+                            <br>
+                            <h3>let 和const的区别</h3>
+                            <br>
+                            <pre><code> - 1.const的值必须先赋值，let不需要赋值</code></pre>
+                            <pre><code> - 2.const不可以被改变 let是可以被改变</code></pre>
+                            
+                            <br>
+                            <ul>
+                            <li>let  声明变量不能被提升， var声明变量会被提升到最高级</li>
+                            <li>let 不允许重复定义，var允许重复定义</li>
+                            <li>let 有块级作用域，var没有块级作用域</li>
+                            <li><p>let 存在暂时性死区（TDZ） var不存在暂时性死区（TDZ）</p>
+                                <br>
+                            <p>1.student_name</p>
+                                    <p>2.sStudetName（匈牙利命名法，驼峰式命名法）//匈牙利命名法的意思是在首位加上变量的类型（string）</p>
+                                            <p>3.$student_name(都被认为是jQ的变量)</p>
+                                                    <p>4._student_naem(都被认为公共变量)</p>
+                        </li>
+                            </ul>
+                            <br>
+                            <h2>ES6数据类型</h2>
+                            <br>
+                            <p><strong>基本数据类型</strong></p>
+                            <br>
+                            <ul>
+                            <li><p>Number（数字）</p>
+                                <br>
+                            <ul><li>NaN 非数字</li>
+                            <li>lnfinity 无穷大|无穷小</li></ul></li>
+                            <li><p>String（字符串）</p>
+                                <br>
+                            <ul><li>但凡是单引号，双引号，反引号括起来的都是字符串</li></ul></li>
+                            <li><p>Boolean（布尔）</p>
+                                <br>
+                            <ul><li>逻辑&lt;=>数学</li>
+                            <li>true -> 1</li>
+                            <li>false -> 0</li></ul></li>
+                            <li><p>Null(空)</p></li>
+                            <li><p>Undefined（未定义的 | 未赋值的）</p></li>
+                             <p>Symbol（ES6新增数据类型，唯一的）表达这个值不可能和另外一个值相等</p>
+                            <p>sym1 = symbol(100);</p> 
+                            <p>sym2 = symbol(100);</p> 
+                            <p>(sym1 === syml2)//false</p>
+
+                            <p>nudefined 、null、"" 的区别</p>
+                            <p>是一个被动行为，undefined是被迫表示 空</p>
+                            <p>是一个主动行为 开发者 主动定义这个内容为空</p>
+                            <p>"" 他有值 值是空字符串</p>
+                            </ul>
+                                <br>
+                            <p><strong>复合数据类型</strong></p>
+                                <br>
+                            <ul>
+                            <li>object 对象</li>
+                            <li>Array  数组</li>
+                            <li>function  函数</li>
+                            <li>......</li>
+                            </ul>
+
+                            <p>注意：<strong>只要是变量 就可以用${}来抱起来打印输出，且这个符号还能用来计算</strong></p>
+                            <br>
+                            <h2>作用域</h2>
+                            <br>
+                            <ul>
+                            <li><p>ES6中新增块级作用域 ：只要是被大括号包裹的内容，都属于块级作用域 （if/for/while）</p></li>
+                            <li><p>作用域理解： 任何地方理论上都是可以取到全局变量。采取就近原则</p></li>
+                            </ul>
+                            <br>
+                            <h2>数组</h2>
+                            <br>
+                            <ul>
+                            <li><p>Array 在js中是最重要的一对多的关系数据 也是我们接触的第一个一对多关系数据</p>
+                                <br>
+                            <p>语法：</p>
+                            <p>字面量初始化</p>
+                            <p>let arr = [];</p>
+                            <p>构造函数初始化</p>
+                            <p>let arr = new Array(); //通过Array工厂来构建一个arr变量 arr变量就是一个数组对象</p>
+                            <p>初始化都是一个空数组</p>
+                                <br>
+                            <strong>js中的数组 和其他的编程语言不太一样 可以在任何位置放任何数据类型，这是js的最大优点灵活性好，也是最大的缺点</strong>
+                            <p>let arr3 = [1, "a", true, null,,{name: "张三", age: 20}, [1, 2, 3], function() {console.log("haha")}, "\"",]</p></li>
+                            </ul>
+                            <br>
+                            <h3>数组方法</h3>
+                            <br>
+                            <ul>
+                            <li>
+                            <p>reverse():反转方法 也会改变源数组</p>
+                            <p>let arr = [1,2,3];</p>
+                            <p>arr.reverse()</p>
+                            <p>console.log(arr)</p>
+                            </li>
+                            <li>
+                                <p>indexOf() ：根据元素查询第一个满足条件的下标 （懒汉模式）（从左到右）</p>
+                                <p>默认值：formIndex 从哪里开始查询 如果没有填 就相当于0</p>
+                                <br>
+                            <p>let arr = ["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"];</p>
+                                    <p>console.log(arr.indexOf("e"))     // 1</p>
+                                            <p>特别的 如果没有任何元素满足条件的话 那么返回的就是 -1</p></li>
+                            <li>
+                                <p>lastIndexOf():根据元素查询最后一个满足的下标（从右大左）</p>
+                                <p>let arr = ["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"];</p>
+                                <p>console.log(arr.lastIndexOf("l"))     // 8</p>
+                                <br>
+                            <p><strong>栈方法</strong> <br>
+                            <p>arr.push()：入栈方法 在数组尾部添加新元素</p>
+                            <p>arr.pop():出栈方法 删除数组的最后一个元素</p>
+                                <br>
+                            <p><strong>队列方法</strong>
+                            <p>arr.unshift()：在数组第一个元素前面添加一个新的元素</p>
+                            <p>arr.shift(): 删除数组的第一个元素</p></li>
+                            <li><p>includes() ：ES6新增数组查询方法，返回的是布尔类型true或者false </p></li>
+                            <li><p>concat() ：数组连接方法 将两个或更多的数组归并到一个数组 </p>
+                            <p>let arr1 = [1, 2, 3]</p>
+                            <p>let arr2 = [4, 5, 6]</p>
+                            <p>let arr3 = [7, 8, 9]</p>
+                            <p>//每一个工厂都会有一个方法叫toString()</p> 
+                            <p>// console.log(arr1 + arr2 + arr3) //"1, 2, 34, 5, 67, 8, 9"</p>
+                                <br>
+                            <p>使用扩展运算符也可以实现数组连接</p>
+                            <p>let result2 = [...arr1, ...arr2, ...arr3]   //[1, 2, 3, 4, 5, 6, 7, 8, 9]</p></li>
+                            <li><p>slice(start:number,end:number) start:开始截取的位置  end:结束截取的位置 return 是一个新子数组
+                            E对数组做切割 切割出一个子数组</p>
+                            <p>let newArr = arr.slice(1,4);//包头不包尾 就是只算到第三个</p></li>
+                            <li><p>splice(): 方法可以做增、删、改</p>
+                            <p>arr.splice(start: number[, deleteCount: number[, item1: any[, item2: any[, ....]]]])</p>
+                            <p>start 开始操作的下标</p>
+                            <p>deleteCount 删除的个数</p>
+                            <p>item1,item2,item3.... 待新增的内容</p>
+
+                            <p>这个方法会改变源数组</p>
+
+                            <p>// 删
+                            let arr = [10, 20, 30, 40, 50, 60];
+                            // arr.splice(1)   //从一号位开始 包含一号位 后面的内容全部都删掉 20, 30, 40, 50, 60</p>
+
+                            <p>//增
+                            // arr.splice(1, 0, "a", "b", "c")     //[10, "a", "b", "c", 20, 30, 40, 50, 60]</p>
+
+                            <p>//改
+                            arr.splice(1, 3, "a", "b", "c")   //[10, "a", "b", "c", 50, 60]</p></li>
+                            <li><p>flat(): 扁平方法
+                            let arr = [1, [2, 2], 1]      //[1, 2, 2, 1] <br>
+                            console.log(arr.flat(Infinity))</p>
+
+                            <ul><li>1.Array.from（）
+                            作用：
+                            1.可以强转数组
+                            2.遍历该数组内容，达到某种目的
+                            Array.from(arrayLike:必须是一个类数组||数组 [, mapFn: function 回调函数表示每一个数组元素都会使用一次这个回调函数[, thisArg: 表示this的指向]])
+                            /*<ul id="container">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            </ul></li></ul>
+
+                            <p>let oUl = document.getElementById("container");
+                            let aLi = oUl.getElementsByTagName("li");
+                            //将HTMLCollection强转为Array 那么就有资格使用Array工厂的所有原型方法
+                            let arrLi = Array.from(aLi)//将集合转换为数组
+                            arrLi.pop()//删除最后一个li</p>
+
+                            <p>for(let i = 0; i &lt; arrLi.length; i++) {
+                            arrLi[i].style.backgroundColor = "pink"
+                            } */
+                            //回调函数中的参数 往往不由你来决定 而是Google浏览器的开发者来规定
+                            //Array.from 这个函数 有两个参数
+                            //第一个参数 表示数组或类数组
+                            //第二个参数 表示回调函数 会对第一个参数中的数组元素 进行遍历且做这个函数操作
+                            //回调函数中 又规定了两个固定的参数 element&amp;&amp;index&amp;&amp;array</p></li>
+                            <li><p><strong>every()方法：等同于逻辑运算符中的&amp;&amp;运算 只要数组中有一个元素不符合整条就返回false</strong></p>
+
+                            <p>// callback 回调函数 表示每一个元素都会经过这个回调函数
+                            // element 数组中的每个元素
+                            // index 数组中的每个下标
+                            // arr 就是被遍历的源数组
+                            // arr.every(callback(element: any, index: number, array: array): function)
+                            let arr1 = [1, 5, 9]    // [true, true, true]  => true
+                            let arr2 = [3, 7, 11]   // [true, true, true]  => true
+                            let arr3 = [3, 8, 11]   // [true, false, true]  => false*
+                            let arr4 = [2, 8, 10]   // [false, false, false]    => false
+                            //检测数组中所有的元素 是否是奇数 如果全部是奇数 请返回 true 如果不全是奇数 返回false
+                            //every 每一个 监听数组中每个元素是否满足条件
+                            let result2 = arr2.every((e) => {
+                            //检测每个数组元素是否是奇数 如果是奇数 这一次就返回true 如果不是奇数 这一次就返回false
+                            return e % 2 === 1
+                            })
+                            let result3 = arr3.every((e) => {
+                            return e % 2 === 1
+                            //检测每个数组元素是否是奇数 如果是奇数 这一次就返回true 如果不是奇数 这一次就返回false
+                            })
+                            let result4 = arr4.every((e) => {
+                            return e % 2 === 1
+                            //检测每个数组元素是否是奇数 如果是奇数 这一次就返回true 如果不是奇数 这一次就返回false
+                            })
+                            console.log(arr1.every(e => e % 2 === 1))
+                            console.log(result2)
+                            console.log(result3)
+                            console.log(result4)</p></li>
+                            <li><p>2.<strong>some()方法：和every()方法相反 等同于逻辑运算符中的||运算 只要数组中有一个元素符合就整条返回true</strong></p></li>
+                            <li><p>3.<strong>filter():过滤方法</strong>
+                            let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+                            let result = arr.filter(e => e % 2 === 0)
+                            console.log(result)</p></li>
+                            <li><p>4.<strong>forEach()方法 ：遍历数组方法</strong>
+                            //callback 回调函数 对数组arr中所有元素都做一次函数操作
+                            // element 当前被遍历的元素 "张三" "李四" "王五"
+                            // index 当前被遍历的下标 0 1 2
+                            // array 被遍历的源数组 ["张三", "李四", "王五"]
+                            <strong>没有返回值 他的返回值 永远默认都是undefined</strong>
+                            //["张三真帅", "李四真帅", "王五真帅"];</p>
+                                <br>
+                            <p>let arr = ["张三", "李四", "王五"];
+                            let newArr = arr.forEach((e) => {
+                            console.log(e + "真帅")
+                            })
+                            console.log(newArr)   //undefined</p></li>
+                            <li><p>5.<strong>map()方法:遍历数组方法 有返回值</strong>
+                            let newArr = arr.map((e) => {
+                            console.log(e + "真帅")
+                            return e + "真帅"
+                            })
+                            console.log(newArr)   //["张三真帅", "李四真帅", "王五真帅"];</p>
+                            <br>
+                            <ul><li>6.<strong>keys() values() entires () :ES6新增遍历数组键和值的三个方法</strong>
+                            let arr = ['a', 'b', 'c'];
+                            //根据arr的键们 来遍历键 每次得到的值 是当前被遍历的键
+                            for(let key of arr.keys()) {
+                            console.log(key)    //0 1 2
+                            } </li></ul>
+                            <br>
+                            <p>for(let value of arr.values()) {
+                            console.log(value)    //'a' 'b' 'c'
+                            } </p>
+                            <br>
+                            <p>for(let [key, value] of arr.entries()) {
+                            console.log(<code>这次的键是${key}</code>)
+                            console.log(<code>这次的值是${value}</code>)</p></li>
+                            <li><p>7.<strong>解构赋值</strong>
+                            // 对右边做getter 对左边做setter 依次对相应的内容直接赋值
+                            // 然后依次赋值 0号位对应0号位
+                            // [a, b] = ["牛奶", "可乐"]
+                            [a, b] = [b, a];</p></li>
+                            <li><p>8.<strong>sort()：</strong>自动排序方法，自然数根据字符串编码表排序（相似冒泡算法）
+                            //用户可以按照你的想法来做排序 相邻交换排序
+                            //sort(callback(prev, next)) 对数组做排序
+                            //callback 对排序方法做一个修饰
+                            //prev 上一个元素
+                            //next 下一个元素
+                            //交换排序
+                            //原地算法 -> 冒泡算法 </p></li>
+                            </ul>
+                            <br>
+                            <p>/*  let arr = [2, 4, 3, 5, 1]</p>
+                            <br>
+                            <pre><code>let arr2 = ["apple", "cherry", "banana", "AA", "AB", "AC", 100, 200, " "]
+                                    <br>
+                            let arr3 = [1, 11, 2, 22]
+                            console.log(arr.sort())
+                            <br>
+                            console.log(arr2.sort())    //[" ", 100, 200, "AA", "AB", "AC", "apple", "banana", "cherry"]
+                            <br>
+                            //如果回调函数返回的结果是正数 那么就交换他俩的位置
+                            //如果回调函数返回的结果是负数和0 那么就不交换他俩的位置
+                            console.log(arr3.sort((a, b) =&gt; a - b)) */
+                            </code></pre>
+                            <br>
+                            <h2>高级函数数组方法(面试题)</h2>
+                            <br>
+                            <ul>
+                            <li><p>五个数组方法es5就已经存在
+                            1.from() 方法
+                            2.every()方法
+                            3.some() 方法
+                            4.forEach()方法
+                            5.map()方法</p>
+                            <br>
+                            <p><strong>重点遍历循环方法</strong></p>
+                            <br>
+                            <ol><li>for</li>
+                            <li>while</li>
+                            <li>dowhile</li>
+                            <li>forin</li>
+                            <li>Array.from</li>
+                            <li>forEach()</li>
+                            <li>map</li>
+                            <li>keys values entires for...of(可以遍历可迭代对象) ES6</li></ol></li>
+                            </ul>
+                            <br>
+                            <p><strong>重点冒泡算法</strong>
+                            * 冒泡算法的原理是交换排序 交换排序的原理是相邻两个元素发生比较 
+                                //如果前一个大于后一个元素的话 那么就交换他两的位置
+                                //如果前一个小于等于后一个元素的话 那么就不交换
+                                let arr = [2, 4, 3, 5, 1]   //[1, 2, 3, 4, 5]
+                                function bubbleSort(arr) {
+                                //外循环 表达的是轮次 每一轮确定一个值
+                                for(let i = 0; i &lt; arr.length - 1; i++) {
+                                    //内循环 表达的是比赛的次数 每一次 都是前后值进行比较
+                                    for(let j = 0; j &lt; arr.length - 1 - i; j++) {
+                                    //arr[j] 0 1 2 3
+                                    //2 4 3 5
+                                    //arr[j + 1] 1 2 3 4
+                                    //4 3 5 1
+                                    if(arr[j] > arr[j + 1]) {
+                                        // let temp;
+                                        // temp = arr[j];
+                                        // arr[j] = arr[j + 1];
+                                        // arr[j + 1] = temp
+                                        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+                                    }
+                                    // console.log(arr[j])   //前一个数字
+                                    // console.log("----------------")
+                                    // console.log(arr[j + 1])   //后一个数字
+                                    }
+                                }
+                                return arr
+                                }
+                                console.log(bubbleSort(arr))</p>
+                                <br>
+                            <h2>回调函数</h2>
+                            <br>
+                            <p>回调函数 将函数（副函数）当做参数 传入到另一个主函数中的使用方法 这就叫回调函数</p>
+                            <br>
+                            <p>//定义一个主函数
+                                function fn1(callback) {
+                                debugger
+                                console.log("正在调用一个主函数")
+                                //运行主函数之后会执行一个回调函数
+                                callback()
+                                }</p>
+                                <br>
+                            <pre><code>//定义一个副函数
+                            function inner() {
+                            console.log("我是一个回调函数")
+                            }
+                            <br>
+                            //调用一个主函数
+                            console.log(fn1(inner))
+                            </code></pre>
+                       </div>
+                       <div>
+                            <h2>作用域</h2>
+                            <br/>
+                            <ul>
+                            <li><p>JavaScript有几个作用域</p>
+                            <br/>
+                            <ul><li>ES5 只有两个作用域  全局作用域和私有作用域（函数作用域）</li>
+                            <li>在ES6中新增了一个作用域叫块作用域（let）变相实现</li>
+                            <li>全局作用域的范围 是整个window环境</li>
+                            <li>函数作用域的范围，在整个函数中，函数的大括号都可以是一个独立的函数作用域</li>
+                            <li>块作用域的范围 只要是个大括号 就是一个独立的块级作用 由于这个特性 会导致for/while每次循环都会产生成一个独立的块作用域</li></ul></li>
+                            <li><p>注意：</p>
+                            <br/>
+                            <ol><li>null 永远等于null</li>
+                            <li>NaN 永远不等于NaN</li>
+                            <li>所有的对象都是内存地址引用</li></ol></li>
+                            </ul>
+                            <br/>
+                            <hr />
+                            <br/>
+                            <ul>
+                            <li><p><strong>栈内存</strong></p>
+                            <br/>
+                            <ol><li>是所有作用域的执行环境</li>
+                            <li>所有基本数据类型的key和value // null</li>
+                            <li>所有引用（复杂）数据类型的key （值是一个内存地址 通过这个内存地址变相的存储的那个值）</li></ol></li>
+                            <li><p><strong>堆内存</strong></p>
+                            <br/>
+                            <ol><li>所有的引用数据类型的value</li></ol></li>
+                            </ul>
+                            <br/>
+                            <p>例：</p>
+                            <br/>
+                            <pre><code>     function show() {
+                            <br/>
+                                    let i = 1;
+                            <br/>
+                                    console.log(i++)
+                            <br/>
+                                }
+                            <br/>
+                                  show()    //1
+                            <br/>
+                                  show()    //1
+                            <br/>
+                                  show()    //1
+                            <br/>
+                                  console.log(i)    //4
+                            </code></pre>
+                            <br/>
+                            <h2>闭包</h2>
+                            <br/>
+                            <ul>
+                            <li><p>很多时候要求变量局部变量，因为全局变量会污染全局作用域（window），而又不能改变需求的东西 ，这时候就要用到闭包，即是局部变量，又可以记忆下这个变量</p>
+                            <br/>
+                            <ul><li>闭包的概念：<strong>形成一个[不被销毁]的[私有作用域]！</strong></li>
+                            <li>闭包的作用：<strong>保存变量（不被销毁），保护变量（私有作用域）</strong></li>
+                            <li>闭包的形式：<strong>函数嵌套函数，且提供局部变量的返回值</strong></li></ul></li>
+                            </ul>
+                            <br/>
+                            <p>例：</p>
+                            <br/>
+                            <p>全局变量不被销毁 局部变量在函数执行完毕之后(触碰到大括号|触碰到return)的时候都会销毁</p>
+                            <br/>
+                            <pre><code>function outer() {
+                            <br/>
+                              let a = 1;
+                            <br/>
+                              function inner() {
+                            <br/>
+                                console.log(a)
+                            <br/>
+                                a = a + 1
+                            <br/>
+                              }
+                            <br/>
+                              return inner
+                            }
+                            <br/>
+                            let add = outer();    //add = inner
+                            <br/>
+                            add()   //1
+                            <br/>
+                            add()   //2
+                            <br/>
+                            add()   //3
+                            </code></pre>
+                            <br/>
+                            <p>## 立即执行函数</p>
+                            <br/>
+                            <ul>
+                            <li><p>立即执行函数 = 函数的声明 + 函数的调用 组合而来</p>
+                            <br/>
+                            <ul><li>立即执行函数的概念 马上执行的函数 马上声明且调用的函数</li></ul>
+                            <br/>
+                            <p>语法：</p>
+                            <br/>
+                            <pre><code>    (function（立即执行函数的形参）{}(立即执行函数的实参))
+                            <br/>
+                                    (function(){})();
+                            <br/>
+                                    !function(){}();
+                            <br/>
+                                    +function(){}();
+                            <br/>
+                                    -function(){}();
+                            <br/>
+                                    ~function(){}();
+                            <br/>
+                                这些全部都是立即执行函数
+                            <br/>
+                                (function (name) {
+                            <br/>
+                                        console.log(name)
+                            <br/>
+                                     }("zhangsan"))
+                            </code></pre>
+                            <br/>
+                            <ul><li>利用立即执行函数可以进行插件的封住和多人开发</li>
+                            <li>立即执行函数就是对闭包的一种应用</li></ul></li>
+                            </ul>
+                            <br/>
+                            <h2>柯里化</h2>
+                            <br/>
+                            <ul>
+                            <li><p>柯里化就是函数的某些参数预先设置 / 传参 / 调用</p>
+                            <br/>
+                            <ul><li>柯里化编程思想 curry 预先处理部分内容的一个思想 高阶编程技巧 必然是一个闭包，闭包是一个抽象概念</li>
+                            <li>而立即执行函数 / 惰性函数 / 柯里化是闭包概念的一个应用 </li></ul>
+                            <br/>
+                            <p>例：</p>
+                            <br/>
+                            <pre><code>    
+                                  function sum2(y) {
+                            
+                                    return function (x) {
+                            
+                                        return x + y
+                            
+                                    }
+                                }
+                                let sumToFive = sum2(5)   //将y锁定成5 随时拿任意的x来求和
+                            
+                                let sumToTen = sum2(10)   //将y锁定成10 随时拿任意数的x来求和
+                            
+                                console.log(sumToFive(8))
+                            
+                                console.log(sumToFive(10))
+                            
+                                console.log(sumToFive(18))
+                            </code></pre></li>
+                            </ul>
+                            
+                            <h2>垃圾回收机制</h2>
+                            
+                            <ul>
+                            <li><p>在JavaScript中有两种垃圾回收机制(gc)</p>
+                            
+                            <ol><li><p>引用清除(引用计数) IE非标准浏览器内核中使用的垃圾回收机制(清除没有被引用的变量及作用域)
+                            2.标记清除 标准浏览器。</p>
+                            
+                            <pre><code>function show() {
+                            
+                                //丈夫 和 妻子
+                            
+                                var husbands = {
+                            
+                                    name: "张三"
+                            
+                                }
+                            
+                                var wife = {
+                            
+                                    name: "小红"
+                            
+                                }
+                            
+                                //张三的老婆是小红
+                            
+                                husbands.prop = wife
+                            
+                                //小红的老公是张三
+                            
+                                wife.prop = husbands
+                            
+                            }
+                            
+                            show()
+                            
+                            //这一对变量 互相之间引用 会造成内存泄露 本应该被销毁的变量或作用域 却仍然占据着内存
+                            
+                            //会造成内存溢出
+                            
+                            优点: 是不被销毁(内容可保存/保护) 缺点是不被销毁(内存会开启着一些不必要的开销,占据内存空间) 所以使用闭包的时候如果可以的话 尽量让不用的闭包 让他变成null 空指针 空指针对象 垃圾回收机制 会自定的定时回收内存垃圾
+                            </code></pre></li></ol></li>
+                            </ul>
+                            
+                            <h2>递归</h2>
+                            
+                            <ul>
+                            <li><p>什么是递归？ 递归就是循环的另外一种表现
+                             1.函数调用自己 自己调用自己（无限死循环）
+                             2.必须设定一个停止的条件
+                             3.使用递归可以实现数组和对象的扁平化和深复制方法（无须设置停止条件）</p>
+                            
+                            <ul><li>递归可以跟循环互换 很多递归题 都可以通过循环来实现(如果是一个不确定的循环 一般情况下就需要使用递归)</li></ul>
+                            
+                            <p>例：
+                                    function fn(n) {</p>
+                            
+                            <pre><code>        // 必须设定一个停止条件
+                            
+                                    if(n === 1) {
+                            
+                                        return 1
+                            
+                                    }
+                            
+                                    //函数自己调用自己
+                            
+                                    return n * fn(n - 1)
+                            
+                                }
+                            
+                                console.log(fn(5))     // 120
+                            </code></pre></li>
+                            </ul>
+                            <br/>
+                            <h2>深复制</h2>
+                            <br/>
+                            <ul>
+                            <li><p>深复制有三种方法可以实现</p>
+                            <br/>
+                            <ol><li><p>递归（自行实现）</p></li>
+                            <li><p>JSON.parse(JSON.stringify(obj))
+                                json.parse的特性：
+                                (1) 破坏原型链
+                                (2) 完全不能实现函数的深复制</p></li>
+                            <li><p>jquery方法：$.extend</p>
+                            <br/>
+                            <ul><li>特别注意：object。assign()该方法只能递归一层属于浅复制</li></ul></li></ol></li>
+                            </ul>
+                       </div>
+                       <div>
+                            <h2>面向对象</h2>
+                            <br/>
+                            <ul>
+                            <li>java是一门完全面向对象的语言</li>
+                            <li>js 是一门 基于面向对象的语言 base-object</li>
+                            <li>面向对象三大特性：（抽象） 封装 继承 多态</li>
+                            <li>函数性质 => 普通函数/构造函数(class) 类(group) -> 工厂 用来生产具备某些静态的属性 和 动态的方法 的实例</li>
+                            <li>数据类型的分类 基本数据类型(string,number,boolean,null,undefined,symbol) 复合数据类型(object)</li>
+                            <li>{} 是编程语言中 通用语法糖(表达式) 在任何编程语言中 {} 都是表示一个对象 []都是表示一个数组</li>
+                            <li><p>{} ===> new Object() 给Object一些原料 会 通过Object工厂 生产出一个变量(实例) 他的类型 一定是 Object类型
+                            // 他本身 是一个 object 实例</p>
+                            <br/>
+                            <p><em>对象相当于是工厂</em></p>
+                            <br/>
+                            <ul><li>对象中有静态的属性和动态的方法</li></ul>
+                            <br/>
+                            <p>使用<strong>new</strong>创建一个工厂对象</p>
+                            <br/>
+                            <p>new的意思就是构造一个对象或者构造一个函数</p>
+                            <br/>
+                            <p>构造函数用于生产某种对象</p>
+                            <br/>
+                            <p>就是一个构造对象的函数 生产这个实例的工厂</p>
+                            <br/>
+                            <p>let obj = new Object()</p>
+                            <br/>
+                            <ol><li><p>引入静态的属性</p>
+                            <br/>
+                            <p>obj.name = name;
+                            obj.age = age;</p></li>
+                            <li><p>引入动态的方法</p>
+                            <br/>
+                            <p>obj.eat = function() {<br/>
+                            return this.name + "在吃"<br/>
+                            }</p></li></ol></li>
+                            </ul>
+                            <br/>
+                            <p><strong>注意：</strong></p>
+                            <br/>
+                            <pre><code>当new生产一个实例时 this 指针的指向会强行扭转成指向该作用person
+                            
+                            而new又会让这个作用域返回该对象 this 指针又会变相指向 最后接收这个变量的杯子person &amp;person2
+                            </code></pre>
+                            <br/>
+                            <p>​ <br>
+                                //function Person(name, age) {</p>
+                            <br/>
+                            <pre><code>  //2. 引入静态的属性
+                            
+                              this.name = name;
+                            
+                              this.age = age;
+                            
+                              //3. 引入动态的方法
+                            
+                              this.eat = function() {
+                            
+                                return this.name + "在吃"
+                            
+                              }
+                            
+                              this.sleep = function() {
+                            
+                                return this.name + "在睡"
+                            
+                              }
+                            
+                            }
+                            
+                            let person = new Person("张三", 30)
+                            
+                            let person2 = new Person("小李", 20)
+                            </code></pre>
+                            <br/>
+                            <p>​   </p>
+                            <br/>
+                            <h2>静态的属性和动态的方法</h2>
+                            <br/>
+                            <p>静态属性也叫成员属性：<br/>
+                                  成员属性<br/>
+                                  this.name = name<br/>
+                                  this.age = age</p>
+                            <br/>
+                            <p>动态方法也叫成员方法：<br/>
+                                  成员方法<br/>
+                                 this.getBirth = function() {<br/>
+                                  }<br/>
+                            - 每一个对象 都会具备一个原型(prototype)<br/>
+                            - 任何一个工厂(构造器/构造函数/构造类) 都会自动持有一个同名的原型：Person.prototype<br/>
+                            - 只要是从Person工厂生产出来的东西 都会自动带有Person的原型</p><br/>
+                            
+                            <h2>Object 构造函数的方法</h2>
+                            <br/>
+                            <ul>
+                            <li>Object.assign()：通过复制一个或多个对象来创建一个新的对象。</li>
+                            <li>Object.create()：使用指定的原型对象和属性创建一个新对象。</li>
+                            </ul>
+                            <br/>
+                            <h2>Object 实例和 Object 原型对象</h2>
+                            <br/>
+                            <p><em>属性</em></p>
+                            <br/>
+                            <ul>
+                            <li>Object.prototype.constructor 特定的函数，用于创建一个对象的原型。</li>
+                            </ul>
+                            <br/>
+                            <p><em>方法：</em>
+                             + Object.prototype.toLocaleString()：直接调用 toString()方法。<br/>
+                             + Object.prototype.toString() ：返回对象的字符串表示。</p>
+                            <br/>
+                            <h3>原型</h3>
+                            <br/>
+                            <ul>
+                            <li><p>原型的特点： 为了实现继承，通过prototype 实现对象的公有属性和方法</p></li>
+                            <li><p>原型也叫原型对象</p></li>
+                            <li>constructor代表的是一个构造器 表示该对象是有什么东西构建的</li>
+                            <li><p>每个实例都会自动具备一个__ proto __ 这个 __ proto __ 会自动指向构造该实例的工厂</p>
+                            <br/>
+                            <p>执行：console.log(Person.prototype)</p>
+                            <br/>
+                            <p>输出：
+                            Object</p>
+                            <br/>
+                            <p>eat: ƒ ()</p>
+                            <br/>
+                            <p>sleep: ƒ ()</p>
+                            <br/>
+                            <p>constructor: ƒ Person(name, age)</p>
+                            <br/>
+                            <p>__ proto __: Object</p></li>
+                            </ul>
+                            <br/>
+                            <p>​   </p>
+                            <br/>
+                            <h2>继承</h2>
+                            <br/>
+                            <ul>
+                            <li><p>继承就是子类继承父类</p></li>
+                            <li><p>当A类具备B类中所有的属性和方法的时候那么就称为A和B是一个继承关系 A类（子类subClass）继承B类（父类/超类superClas）</p></li>
+                            </ul>
+                            <br/>
+                            <p>​   </p>
+                            <br/>
+                            <h3>继承分类</h3>
+                            <br/>
+                            <p>继承的三种方法
+                              1. call &amp; apply 继承</p>
+                            <br/>
+                            <p>function Teacher(name, age, tAge) {</p>
+                            <br/>
+                            <pre><code>  //t1 借用 window对象的 Person 方法 让这一次作用域this指向Teacher -&gt; t1
+                            
+                              // Person.call(this, name, age)
+                            
+                              // Person.apply(this, arguments)   //类数组对象
+                            
+                              Person.call(this, ...arguments)
+                            
+                              this.tAge = tAge;
+                            
+                              this.teach = function() {
+                            
+                                return `在教书`
+                            
+                              }
+                            
+                            }
+                            </code></pre>
+                            <br/>
+                            <ol>
+                            <li><p>原型链继承 </p>
+                            <br/>
+                            <p>function Teacher(name, age, tAge) {</p>
+                            <br/>
+                            <pre><code>//t1 借用 window对象的 Person 方法 让这一次作用域this指向Teacher -&gt; t1
+                            </code></pre>
+                            <br/>
+                            <p>this.name = name;</p>
+                            <br/>
+                            <pre><code>this.age = age;
+                            
+                            this.tAge = tAge;
+                            </code></pre>
+                            <br/>
+                            <p>}</p>
+                            <br/>
+                            <p>Teacher.prototype = new Person();   //Teacher.prototype = Person.prototype</p>
+                            <br/>
+                            <p>//构建了一个t1</p>
+                            <br/>
+                            <p>//t1.__ proto __ => Teacher.prototype -> Person.prototype</p>
+                            <br/>
+                            <p>//t1既可以使用本地的属性方法 也可以使用Teacher的原型属性和方法 还可以使用Person的原型的属性和方法 甚至可以使用Object的原型和方法</p>
+                            <br/>
+                            <p>Teacher.prototype.teach = function () {</p>
+                            <br/>
+                            <pre><code>return `在教书`
+                            </code></pre>
+                            <br/>
+                            <p>}</p>
+                            <br/>
+                            <p>//普通函数的调用的写法 fn()</p>
+                            <br/>
+                            <p>//构造函数的调用的写法 new Fn()</p>
+                            <br/>
+                            <p>let p1 = new Person("张三", 20); </p>
+                            <br/>
+                            <p>let p2 = new Person("李四", 30);</p>
+                            <br/>
+                            <p>let t1 = new Teacher("李四", 30, 5);</p>
+                            <br/>
+                            <ul><li><p>当继承的原型串成一条串时就叫原型链</p>
+                            <br/>
+                            <ul><li>原型链的方法调用规则是：就近原则 本地 -> 它的原型 -> 它的原型链</li></ul>
+                            <br/>
+                            <p>//如果本地也就是p1没有这个方法 那么就会使用原型中的方法</p>
+                            <br/>
+                            <p>console.log(p1.eat() === p2.eat())    //张三在吃===李四在吃  false</p>
+                            <br/>
+                            <p>console.log(p1.eat === p2.eat)    //fn === fn  true</p>
+                            <br/>
+                            <p>console.log(t1.eat())</p>
+                            <br/>
+                            <p>console.log(t1.sleep())</p>
+                            <br/>
+                            <p>console.log(t1.teach())</p></li></ul></li>
+                            <li><p>混合继承
+                              function Person(name, age) {</p>
+                            
+                            <p>this.name = name</p>
+                            
+                            <p>this.age = age</p>
+                            
+                            <p>}</p>
+                            
+                            <p>Person.prototype.eat = function() {</p>
+                            
+                            <p>return this.name + "在吃"</p>
+                            
+                            <p>}</p>
+                            
+                            <p>Person.prototype.sleep = function() {</p>
+                            
+                            <p>return this.name + "在睡"</p>
+                            
+                            <p>}</p>
+                            
+                            <p>function Teacher(name, age, tAge) {</p>
+                            
+                            <p>Person.call(this, arguments)    //第二次调用</p>
+                            
+                            <p>this.tAge = tAge;</p>
+                            
+                            <p>}</p>
+                            
+                            <p>Teacher.prototype = new Person();   //Teacher.prototype = Person.prototype 第一次调用</p>
+                            
+                            <p>Teacher.prototype.teach = function () {</p>
+                            
+                            <p>return <code>在教书</code></p>
+                            
+                            <p>}</p></li>
+                            <li><p>寄生继承</p>
+                            
+                            <p>//创建一个寄生对象(中介) 中介的本身是指向小括号内部的内容 Person的原型</p>
+                            
+                            <p>function Person(name, age) {</p>
+                            
+                            <p>console.log("我进来了")</p>
+                            
+                            <p>this.name = name</p>
+                            
+                            <p>this.age = age</p>
+                            
+                            <p>}
+                            Person.prototype.eat = function () {</p>
+                            
+                            <p>return this.name + "在吃"
+                            }</p>
+                            
+                            <p>Person.prototype.sleep = function () {</p>
+                            
+                            <p>return this.name + "在睡"</p>
+                            
+                            <p>}</p>
+                            
+                            <p>function Teacher(name, age, tAge) {</p>
+                            
+                            <p>Person.call(this, ...arguments)</p>
+                            
+                            <p>this.tAge = tAge;
+                            }</p>
+                            
+                            <p>//寄生继承优化写法 ES5新增了一个Object.create() 专门用来优化寄生继承</p>
+                            
+                            <p>//Teacher.prototype = Person.prototype</p>
+                            
+                            <p>//Teacher.prototype = new Person() 会调用Person</p>
+                            
+                            <p>//根据Person.prototype创建一个对象 Teacher.prototype = Person.prototype</p>
+                            
+                            <p>Teacher.prototype = Object.create(Person.prototype);</p>
+                            
+                            <p>Teacher.prototype.constructor = Teacher;</p>
+                            
+                            <p>Teacher.prototype.teach = function () {</p>
+                            
+                            <p>return <code>${this.name}在教书</code>
+                            }</p>
+                            
+                            <p>let t1 = new Teacher("张三", 30, 10)</p>
+                            
+                            <p>console.log(t1.sleep())</p>
+                            
+                            <p>console.log(t1.teach())</p>
+                            
+                            <p>console.log(t1.<strong>proto</strong>)</p>
+                            
+                            <p>console.log(t1.constructor)</p></li>
+                            </ol>
+                            
+                            <p>​ <br>
+                            ​   </p>
+                            
+                            <h2>数据类型判断</h2>
+                            
+                            <ol>
+                            <li><p>typeof x</p>
+                            
+                            <p>let str = "字符串"</p>
+                            
+                            <p>let num = 1;</p>
+                            
+                            <p>console.log(typeof str)   //"string"</p>
+                            
+                            <p>console.log(typeof num)   //"number"</p>
+                            
+                            <p>//描述 typeof</p>
+                            
+                            <p>//用法 typeof x</p>
+                            
+                            <p>//返回值 是对应数据类型的名字的字符串</p>
+                            
+                            <p>//缺点: 1.不能判断null类型</p>
+                            
+                            <p>// 2.不能判断Array类型</p>
+                            
+                            <p>// 3.自定义的类型更不能判断</p>
+                            
+                            <p>// 一般情况 typeof用来做一些简单类型的判断</p></li>
+                            <li><p>x insTanceof X</p>
+                            
+                            <p>let obj = {}</p>
+                            
+                            <p>let arr = [1, 2, 3]</p>
+                            
+                            <p>console.log(obj instanceof Object) //obj实例就是由Object工厂生产  true</p>
+                            
+                            <p>console.log(obj instanceof Array)   //false</p>
+                            
+                            <p>//描述 instanceof</p>
+                            
+                            <p>//用法 x instanceof X</p>
+                            
+                            <p>//返回值 Boolean 如果是真 说明x的原型链上有X 如果假 说明 x的原型链上没有X</p>
+                            
+                            <p>//缺点: 1. 不能判断基本数据类型</p>
+                            
+                            <p>// 2. 不能明确确定他最终是什么类型 因为原型链上的所有的工厂 返回的都是true</p></li>
+                            <li><p>constructor</p>
+                            
+                            <p>let obj = new Object();</p>
+                            
+                            <p>let arr = new Array();</p>
+                            
+                            <p>// 表示该实例是那个工厂生产的 铭牌</p>
+                            
+                            <p>console.log(obj.constructor)    //Object() { [native code] }</p>
+                            
+                            <p>console.log(arr.constructor)    //Array() { [native code] }</p>
+                            
+                            <p>//描述 constructor 表示这个实例是由哪个工厂直接生产的(这个实例属于哪个类)</p>
+                            
+                            <p>//用法 x.constructor === X</p>
+                            
+                            <p>//返回值 true/false</p>
+                            
+                            <p>//缺点 1.不能判断基本数据类型(压根就没有构造类的概念)</p>
+                            
+                            <p>//2. 默认不能解决自定义类的问题</p></li>
+                            <li><p>Object.prototype.toString.call(x)</p>
+                            
+                            <p>let str = "字符串" </p>
+                            
+                            <p>let num = 1;</p>
+                            
+                            <p>//call change.call(oDiv1, "backgroundColor", "pink")</p>
+                            
+                            <p>//oDiv1 借用window大哥的 change方法 让this指针指向oDiv1</p>
+                            
+                            <p>//str 借用Object.prototype的 toString方法</p>
+                            
+                            <p>console.log(Object.prototype.toString.call(str))    //"[object String]"</p>
+                            
+                            <p>console.log(Object.prototype.toString.call(num))    //"[object Number]"</p>
+                            
+                            <p>// 用法 Object.prototype.toString.call(x)</p>
+                            
+                            <p>// 返回值 "[object 类型]"</p>
+                            
+                            <p>// 缺点: 效率略低 完美方法</p></li>
+                            </ol>
+                            
+                            <p>​   </p>
+                            
+                            <h2>浅复制 和 深复制</h2>
+                            
+                            <p>浅复制：</p>
+                            
+                            <p>let obj = {</p>
+                            
+                            <pre><code>  name: "张三"
+                            
+                            }
+                            
+                            let num = 1
+                            
+                            
+                            let obj2 = obj;
+                            
+                            let num2 = num;
+                            
+                            console.log(obj.name)   // 张三
+                            
+                            console.log(obj2.name)    // 张三
+                            
+                            console.log(num)    // 1
+                            
+                            console.log(num2)   // 1
+                            
+                            
+                            obj2.name = "李四";
+                            
+                            num2 = 2
+                            
+                            console.log(obj.name)   // 李四
+                            
+                            console.log(obj2.name)    //  李四
+                            
+                            console.log(num)    //  1
+                            
+                            console.log(num2)   //  2
+                            </code></pre>
+                            
+                            <p>​ <br>
+                                深复制：</p>
+                            
+                            <pre><code> //如何实现一个函数 既能实现 对象的深复制 又能实现 数组的深复制
+                            
+                            let obj = {
+                            
+                              name: "张三",
+                            
+                              age: 20
+                            
+                            }
+                            
+                            let arr = [1, 2, 3]
+                            
+                            let num = 8080
+                            
+                            //深复制 传入一个对象/数组 复制一个崭新的对象/数组 拓展数组或对象
+                            
+                            function deepClone(obj) {
+                            
+                              let newObj
+                            
+                              if(Object.prototype.toString.call(obj) === "[object Object]") {
+                            
+                                // 传入的是一个对象
+                            
+                                newObj = {}
+                            
+                                for(let key in obj) {
+                            
+                                  newObj[key] = obj[key]
+                            
+                                }
+                            
+                              } else if(Object.prototype.toString.call(obj) === "[object Array]") {
+                            
+                                // 传入的是一个数组
+                            
+                                newObj = []
+                            
+                                obj.forEach(e =&gt; {
+                            
+                                  newObj.push(e)
+                            
+                                })
+                            
+                              } else {
+                            
+                                newObj = obj
+                            
+                              }
+                            
+                              return newObj
+                            
+                            }
+                            
+                            let obj2 = deepClone(obj)
+                            
+                            let arr2 = deepClone(arr)
+                            
+                            let num2 = deepClone(num)
+                            
+                            obj2.name = "李四";
+                            
+                            arr2[2] = 123;
+                            </code></pre>
+                            
+                            <p>​ <br>
+                                 let obj = {</p>
+                            
+                            <pre><code>  name: "张三",
+                            
+                              age: 20,
+                            
+                              hobby: ["唱歌", "跳舞", "游泳"]
+                            
+                            }
+                            
+                            let obj2 = {}
+                            
+                            // Object.assign 浅复制 只有一层的深复制
+                            
+                            //将obj中的所有内容复制到这个空对象中
+                            
+                            Object.assign(obj2, obj)
+                            
+                            console.log(obj2)
+                            
+                            obj2.hobby[0] = "喝酒"
+                            
+                            console.log(obj)
+                            
+                            console.log(obj2)
+                            </code></pre>
+                            
+                            <p>​ <br>
+                            ​   </p>
+                            
+                            <h1>ES6的面向对象</h1>
+                            
+                            <ul>
+                            <li><p>ES6的类</p>
+                            
+                            <ul><li>函数 分为 普通函数和构造函数</li>
+                            <li>所有的普通函数 function</li>
+                            <li><p>所有的构造函数 class</p>
+                            
+                            <ol><li><p>虽然写了class 但是本质上 还是原型链继承 只不过表达式(语法糖)的写法不一样</p></li>
+                            <li><p>每当new Person类的时候 都会自动调用Person类中的constructor(构造器)</p></li>
+                            <li><p>直接在类中 书写的方法都是原型方法(而不是静态方法)</p></li></ol></li></ul>
+                            
+                            <p>class Person {</p>
+                            
+                            <p>//静态属性 这里的属性一定的本地属性</p>
+                            
+                            <p>constructor(name, age) {</p>
+                            
+                            <pre><code>this.name = name;
+                            
+                            this.age = age;
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>//动态的方法</p>
+                            
+                            <p>//这种写法 一定是原型方法</p>
+                            
+                            <p>eat() {</p>
+                            
+                            <pre><code>return `${this.name}在吃饭`
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>sleep() {</p>
+                            
+                            <pre><code>return `${this.name}在睡觉`
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>static fn() {</p>
+                            
+                            <pre><code>return "我是一个静态方法"
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>}</p>
+                            
+                            <p>let p1 = new Person("张三", 30);</p>
+                            
+                            <p>let p2 = new Person("李四", 20);</p>
+                            
+                            <p>console.log(p1.name) </p>
+                            
+                            <p>console.log(p2.name)</p>
+                            
+                            <p>console.log(p1.eat()) </p>
+                            
+                            <p>console.log(p2.sleep()) </p>
+                            
+                            <p>console.log(Person.fn())</p></li>
+                            </ul>
+                            
+                            <p>​ <br>
+                            ​   </p>
+                            
+                            <h2>ES6的类和继承</h2>
+                            
+                            <p>class 声明一个类(本质上他还是构造函数) 只不过为了js区分普通函数和构造函数 所以语法改成了class</p>
+                            
+                            <p>constructor 所有的静态属性 都放到构造器 因为每次new的时候 都会自动调用constructor</p>
+                            
+                            <pre><code>static 表示静态方法
+                            
+                            extends 表示子类继承父类 代码: 子类的原型-&gt;父类的原型
+                            
+                            super 表示调用父类的构造器
+                            </code></pre>
+                            
+                            <ul>
+                            <li><p>初始化一个老师类 继承 人类</p></li>
+                            <li><p>extends的本质是 令Teacher.prototype -> Person.prototype</p>
+                            
+                            <p>class Teacher extends Person {</p>
+                            
+                            <p>//每次new Teacher的时候会自动调用Teacher类的constructor构造器</p>
+                            
+                            <p>constructor(name, age, tAge) {</p>
+                            
+                            <pre><code>//super会主动调用他的超类/父类 的constructor构造
+                            
+                            super(name, age)
+                            
+                            this.tAge = tAge;
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>teach() {</p>
+                            
+                            <pre><code>return `${this.name}在教书`
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>}</p>
+                            
+                            <p>let p1 = new Person("张三", 30);</p>
+                            
+                            <p>let p2 = new Person("李四", 20);</p>
+                            
+                            <p>console.log(p1.name) </p>
+                            
+                            <p>console.log(p2.name)</p>
+                            
+                            <p>console.log(p1.eat()) </p>
+                            
+                            <p>console.log(p2.sleep()) </p>
+                            
+                            <p>console.log(Person.fn())</p></li>
+                            </ul>
+                       </div>
+                       <div>
+                            <h2>DOM操作</h2>
+                            <br/>
+                            <ul>
+                            <li>DOM又叫DOM树：</li>
+                            </ul>
+                            <br/>
+                            <p><strong>树的特点</strong></p>
+                            <br/>
+                            <p>树的层：</p>
+                            <br/>
+                            <ol>
+                            <li>根节点有且仅有一个</li>
+                            <li>每个节点的子节点数最多只能有两个</li>
+                            <li>每层子节点的个数最多只能有2的n-1次方个</li>
+                            </ol>
+                            <br/>
+                            <p>叶节点：</p>
+                            
+                            <ul>
+                            <li>叶节点只能存在最深一层和倒数第二层中</li>
+                            </ul>
+                            <br/>
+                            <p>满二叉树：</p>
+                            <br/>
+                            <p>特殊的完全二叉树</p>
+                            <br/>
+                            <ul>
+                            <li>按照顺序排列所有的节点</li>
+                            <li>叶子节点只能存在在最深一层</li>
+                            <li>层数必然是log2n层</li>
+                            </ul>
+                            <br/>
+                            <h2>节点</h2>
+                            <br/>
+                            <ul>
+                            <li><p>Node（节点）Node是一个非常低层的类(一般不会使用)，一般是有由被的类（子类）
+                            来实现这个类（父类） 继承</p></li>
+                            <li><p>Node是一个虚拟的标准。会有很多工厂来实现他 其中最重要的类 Element就是Node抽象类的一个实现</p></li>
+                            </ul>
+                            <br/>
+                            <p>Element（元素）&lt;===>Tag（标签） head body script div img</p>
+                            
+                            <p>// 拿到document所有的子节点
+                            console.log(document.childNodes)</p>
+                            
+                            <ul>
+                            <li>Node属性：
+                            1.Element的NodeName就是标签名
+                            2.Elmenet的NodeValue绝对是null
+                            3.TextNode(文本节点)的NodeName永远是 #text
+                            4.TextNode的nodeValue就是文本内容</li>
+                            </ul>
+                            <br/>
+                            <h2>方法</h2>
+                            <br/>
+                            <p><strong>1.childNodes和children（重点）方法：获取所有的子节点和获取所有的子元素</strong></p>
+                            
+                            <p>/* let children = oUl.children;</p>
+                            
+                            <p>for(let i = 0; i &lt; children.length; i++) {</p>
+                            
+                            <pre><code> children[i].style.backgroundColor = "pink"
+                            }
+                            
+                            console.log(children) */
+                            </code></pre>
+                            <br/>
+                            <p><em>获取兄弟元素方法</em></p>
+                            
+                            <p><strong>2.1、fistrElementChild ：获取第一个元素</strong></p>
+                            
+                            <p>let firstEle = oParent.firstElementChild</p>
+                            
+                            <p><strong>2.2、lastElementChild:获取最后一个元素</strong></p>
+                            
+                            <p>let lastEle = oParent.lastElementChild;</p>
+                            
+                            <p><strong>2.3、nextElementSibling:获取第一个元素的下一个元素</strong></p>
+                            
+                            <p>let secondEle = firstEle.nextElementSibling</p>
+                            
+                            <p><strong>2.4、previoustElementSibling:获取最后一个元素的上一个元素</strong></p>
+                            
+                            <p><em>获取父元素</em>
+                              <strong>ele.parentNode 和 ele.parentElement：一般的 父节点就是父元素 因为父节点一定是一个元素</strong>
+                                let oUl = oLi.parentElement;</p>
+                            
+                            <pre><code>oUl.style.backgroundColor = "pink"
+                            </code></pre>
+                            <br/>
+                            <p><em>创建标签</em>
+                              - createElement：创建标签
+                                创建一个标签 标签名叫li 这个东西还没有插入到DOM树中
+                                let newLi = document.createElement("li")</p>
+                            
+                            <ul>
+                            <li><p>createTextNode：创建文本
+                            let newTxt = document.createTextNode("哈哈")</p></li>
+                            <li><p>appendChild ：组装元素 剪切元素</p>
+                            
+                            <p>/* newLi.appendChild(newTxt)
+                             oUl.appendChild(newLi)
+                             */</p>
+                            
+                            <p>/* let body = document.body;</p>
+                            
+                            <p>let oDiv = document.querySelector("#div1")</p>
+                            
+                            <p>document.onclick = () => {</p>
+                            
+                            <p>//将oDiv这个标签添加到body中的最后一个位置</p>
+                            
+                            <p>//剪切和添加 添加是不属于DOM树中的内容 剪切原来就已经属于DOM</p>
+                            
+                            <p>body.appendChild(oDiv) */</p>
+                            
+                            <p>/*实现效果： "<li>"哈哈</li>" */</p></li>
+                            <li><p>removeChild (Element)：删除子元素方法</p>
+                            
+                            <p>/* <ul id="ul1">
+                               <li>123</li>
+                               </ul></p>
+                            
+                            <p>let oUl = document.getElementById("ul1");</p>
+                            
+                            <p>let oLi = oUl.firstElementChild;</p>
+                            
+                            <p>oUl.removeChild(oLi) */</p></li>
+                            <li><p>replaceChild:修改元素方法
+                            let newLi = document.createElement("li");
+                            let newTxt = document.createTextNode("我是新标签");</p>
+                            
+                            <p>//拼接成一个新标签
+                            newLi.appendChild(newTxt);</p>
+                            
+                            <p>//用新标签来代替旧标签
+                            oParent.replaceChild(newLi, oldEle)</p>
+                            
+                            <p><em>属性操作</em> </p></li>
+                            <li><p>getComputedStyle(ele: Element) ：拿到ele最终被修饰的样式结果（该方法只能读[get]不能用于写[set]）
+                            let oDivStyles = getComputedStyle(oDiv);
+                            console.log(oDivStyles.backgroundColor)</p>
+                            
+                            <p><strong>自定义属性</strong></p></li>
+                            <li><p>1.setAttribute ：添加属性，修改属性</p>
+                            
+                            <ul><li>添加：oDiv.setAttribute("aaa", "bbb")</li>
+                            <li>修改： oDiv.setAttribute("class", "box2")</li></ul></li>
+                            <li><p>2.removeAttribute:删除属性
+                            oDiv.removeAttribute("class")</p></li>
+                            <li><p>3.getAttribute ：查找属性
+                             console.log(oDiv.getAttribute("aaa"))</p>
+                            
+                            <p>注意：普通的.操作符的设置 不可以设置一个[自定义属性] v-if v-show ng-*
+                                oDiv.aaa = "bbb"
+                               因为我们没有一个aaa属性 所以在这里充当的就是添加操作</p>
+                            
+                            <p>设置官方属性的时候 .操作符是没有问题
+                                oDiv.id = "xxx" 合法
+                                oDiv.className = "xxx" 合法
+                               但是在增加自定义属性的时候 这种方法就不合法 oDiv.aaa = "xxx" 添加不进去</p></li>
+                            </ul>
+                            
+                            <br/>
+                            <h2>this方法</h2>
+                            <br/>
+                            <ul>
+                            <li><p>this 谁调用就指向谁</p>
+                            
+                            <ol><li><p>普通函数指向 window
+                            function show() {</p>
+                            
+                            <p>console.log(this) <br>
+                            // window
+                            }</p></li></ol>
+                            
+                            <p>show()</p>
+                            
+                            <ol><li>一般事件函数由个标签调用 所有事件函数中的this就指向那个标签</li></ol>
+                            
+                            <ul>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            </ul>
+                            
+                            <p>let aLi = document.querySelectorAll("ul li");</p>
+                            
+                            <p>let aLi = document.querySelectorAll("ul li");</p>
+                            
+                            <p>for(let i = 0; i &lt; aLi.length; i++) {</p>
+                            
+                            <p>aLi[i].onclick = function() {</p>
+                            
+                            <pre><code>console.log(this)   //aLi[0/1/2/3]
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>}</p>
+                            
+                            <ol><li>全局作用的指向就是window , 定时器this的指向也是window</li></ol>
+                            
+                            <script>
+                            
+                              console.log(this)   //window
+                            
+                             if(true) {
+                            
+                              console.log(this)   //window
+                            
+                             }
+                            
+                            </script>
+                            
+                            <script>
+                            
+                            window.setTimeout(function() {
+                            
+                              console.log(this)     //window
+                            
+                            }, 1000);
+                            
+                            </script>
+                            
+                            <ol><li>箭头函数中的this指向 是 继承指向 会继承父作用域的指向，当代码已经解析完毕之后 箭头函数的this指向已经确定了</li></ol>
+                            
+                            <p>let aLi = document.querySelectorAll("ul li");</p>
+                            
+                            <p>for(let i = 0; i &lt; aLi.length; i++) {</p>
+                            
+                            <p>aLi[i].onclick = () => {</p>
+                            
+                            <pre><code>console.log(this)   //window
+                            
+                            this.style.background = "pink"
+                            </code></pre>
+                            
+                            <p>}</p>
+                            
+                            <p>}</p>
+                            
+                            <p></script></p>
+                            
+                            <ol><li><p>对象||数组 指向 那个对象||数组</p>
+                            
+                            <p>let obj = {</p>
+                            
+                            <p>name: "某某某",</p>
+                            
+                            <p>age: 18,</p>
+                            
+                            <p>eat: function() {</p>
+                            
+                            <p>console.log(<code>${this.name}在吃</code>)   //obj</p>
+                            
+                            <p>}</p></li></ol>
+                            
+                            <p>}  </p>
+                            
+                            <p>obj.eat()</p>
+                            
+                            <ul><li>改变this指向三个方法 ： call() 、apply()、 bind()</li></ul></li>
+                            </ul>
+                            <br/>
+                            <h2>事件</h2>
+                            <br/>
+                            <p><em>事件方法</em>
+                             <strong><em>事件的分类 事件定义或声明</em></strong>
+                             1. 普通事件</p>
+                            
+                            <pre><code>   oDiv.onclick = function() {
+                            
+                              //   this.style.backgroundColor = "pink"
+                            
+                              // }
+                            </code></pre>
+                            
+                            <p>+ 取消事件</p>
+                            
+                            <pre><code>oDiv.onclick = null
+                            </code></pre>
+                            
+                            <ol>
+                            <li><p>绑定事件</p>
+                            <br/>
+                            <ul><li>oDiv.addEventListener(type: string, callback: function, useCapture: boolean)</li>
+                            <li>
+                            type: 事件类型(不带on)</li></ul>
+                            
+                            <p>callback: 回调函数 每当触发器被触发的时候 会调用回调函数中的内容</p>
+                            
+                            <p>useCapture: 事件传递的方式 缺省值:false 事件冒泡:false|事件捕获:true</p>
+                            
+                            <p>oDiv.addEventListener("click", function() {</p>
+                            
+                            <p>oDiv.style.backgroundColor = "pink"</p>
+                            
+                            <p>}, true)</p>
+                            
+                            <ul><li>取消绑定事件</li></ul>
+                            <br/>
+                            <p>let oDiv = document.getElementById("div1");</p>
+                            
+                            <p>oDiv.addEventListener("click", show, false)</p>
+                            
+                            <p>// oDiv.removeEventListener(type: string, callback: function[, useCapture: boolean])</p>
+                            
+                            <p>// type 事件的类型 click/mousemove</p>
+                            
+                            <p>// callback 满足条件后执行的回调函数</p>
+                            
+                            <p>// useCapture: 缺省值为false false为事件冒泡 true为事件捕获</p>
+                            
+                            <p>// 删除监听器的语法 和 添加监听器的语法 一模一样</p>
+                            
+                            <p>// 删除绑定事件 必须保证三个属性一模一样</p>
+                            
+                            <p>// 必须要保证 事件的类型相同 函数的名字相同 传递的方式相同</p>
+                            
+                            <p>oDiv.removeEventListener("click", show, false)</p>
+                            
+                            <p>function show() {</p>
+                            
+                            <pre><code>oDiv.style.backgroundColor = "pink"
+                            </code></pre>
+                            
+                            <p>}</p></li>
+                            </ol>
+                            <br/>
+                            <p><strong>常见事件有哪些?</strong></p>
+                            
+                            <pre><code>  load (加载事件)
+                            
+                              scroll  (滚动事件)
+                            
+                              resize  (视窗大小变动事件)
+                            
+                              focus/blur (聚焦事件/失焦事件)
+                            </code></pre>
+                            <br/>
+                            <p><em>鼠标事件</em>
+                                  click (左键事件)</p>
+                            <br/>
+                            <pre><code>  dbclick（双击事件）
+                            
+                              mousedown（鼠标按下事件）
+                            
+                              mouseup（鼠标抬起事件）
+                            
+                              执行顺序：1.鼠标按下事件 2.鼠标抬起事件 3.鼠标点击事件
+                            
+                              contextmenu (右键单击事件)
+                            
+                              mousemove (鼠标移动事件)
+                            
+                              mouseover&amp;mouseout (鼠标进入事件&amp;鼠标离开事件) (不冒泡)
+                            
+                              mouseenter&amp;mouseleave (鼠标进入事件&amp;鼠标离开事件) (冒泡)
+                            
+                              mousedown&amp;mouseup (鼠标按下事件/鼠标抬起事件)
+                            </code></pre>
+                            
+                            <p><em>键盘事件</em>
+                                  keydown 键盘按下事件</p>
+                            
+                            <pre><code>  keypress 键盘按压事件
+                            
+                              keyup 键盘抬起事件
+                            </code></pre>
+                            
+                            <h2>阻止事件向后发生</h2>
+                            
+                            <p>// [不同的]且带有[嵌套关系]的标签的[同种事件] 多个事件 穿成串就被称为是 [且传播方向一致]-> 事件流</p>
+                            
+                            <pre><code>// 事件流的传播方向 事件冒泡 和 事件捕获
+                            
+                            // 如果若干个事件 在同样的触发机制(click)且事件传播方式一致(冒泡),且他们之间是一个被嵌套关系的标签组合(body&gt;div1&gt;div2&gt;div3)
+                            
+                            //满足以上三个条件 才能被称为是一个事件流
+                            
+                            //每一个独立的事件 传播机制 他不是一个孤立的系统
+                            
+                            // 事件冒泡(IE) 认为事件的发起者 应该是最小的那个不可分割的单位(标签)(事件源) 所以事件冒泡的传递方式 永远是从 事件源 -&gt; document
+                            
+                            // 事件捕获(chrome/FF) (document -&gt; 事件源)
+                            
+                            
+                            // IE8以下 只支持事件冒泡
+                            
+                            // 现代的标准浏览器 既支持事件冒泡也支持事件捕获
+                            
+                            //body点击事件
+                            
+                            let useCapture = false
+                            
+                            document.body.addEventListener("click", function (e) {
+                            
+                              document.body.style.backgroundColor = "black"
+                            
+                              //阻止方法
+                            
+                             ** e.stopPropagation();**
+                            
+                            }, useCapture)
+                            
+                            //oDiv1点击事件
+                            
+                            oDiv1.addEventListener("click", function (e) {
+                            
+                              oDiv1.style.backgroundColor = "black"
+                            
+                              e.stopPropagation();
+                            
+                            }, useCapture)
+                            
+                            //oDiv2点击事件
+                            
+                            oDiv2.addEventListener("click", function (e) {
+                            
+                              oDiv2.style.backgroundColor = "black"
+                            
+                              //阻止事件向后传递 阻止事件冒泡
+                            
+                             ** e.stopPropagation();**
+                            
+                              // 兼容属性 取消事件冒泡(只能取消冒泡事件 因为IE非标准浏览器(IE8以下)没有事件捕获)
+                            
+                              // e.bubble = false
+                            
+                              // e.cancelBubble = true;
+                            
+                            }, useCapture)
+                            
+                            //oDiv3点击事件
+                            
+                            oDiv3.addEventListener("click", function (e) {
+                            
+                              oDiv3.style.backgroundColor = "black"
+                            
+                             ** e.stopPropagation();**
+                            
+                            }, useCapture)
+                            </code></pre>
+                            <br/>
+                            <h2>事件源</h2>
+                            <br/>
+                            <p>//事件源 就是 事件发生的源头</p>
+                            <br/>
+                            <pre><code>//点击li才变色
+                            
+                            let oParent = document.querySelector("#container");
+                            
+                            oParent.addEventListener("click", function(e) {
+                            
+                              var e = e || window.event;
+                            
+                              var target = e.target || e.srcElement;  //适配标准浏览器 || IE678浏览器
+                            
+                              console.log(e.target)
+                            
+                              //e.target 就是 事件的 事件源
+                            
+                              // 所谓的事件源 事件所发生的真正位置(最小的不可分割的单位)
+                            
+                              // 就可以规避我点击的一定一个li标签
+                            
+                              // if(e.target.className === "list") {
+                            
+                              //  e.target.style.background = "pink"
+                            
+                              // }
+                            
+                              if(e.target.nodeName === "LI") {
+                            
+                                e.target.style.background = "pink"
+                            
+                              }
+                            
+                            })
+                            </code></pre>
+                            <br/>
+                            <h2>事件委托</h2>
+                            <br/>
+                            <pre><code>    &lt;input id="create" type="button" value="新增节点"&gt;
+                            
+                                &lt;ul id="container"&gt;
+                            
+                                &lt;li&gt;&lt;/li&gt;
+                            
+                                &lt;li&gt;&lt;/li&gt;
+                            
+                                &lt;li&gt;&lt;/li&gt;
+                            
+                                &lt;/ul&gt;
+                            
+                            
+                            //1. 点击li变色
+                            
+                            //2. 创建新的li 且也支持点击变色
+                            
+                            let oUl = document.querySelector("#container");
+                            
+                            let aLi = document.getElementsByTagName("li");   //HTMLCollection(3-&gt;4-&gt;5-&gt;6)
+                            
+                            let oCreateBtn = document.querySelector("#create");
+                            
+                            
+                            for(let i = 0; i &lt; aLi.length; i++) {
+                            
+                              aLi[i].addEventListener("click", function() {
+                            
+                                this.style.backgroundColor = "pink"
+                            
+                              })
+                            
+                            }
+                            
+                            oCreateBtn.addEventListener("click", function() {
+                            
+                              //1. 生产标签
+                            
+                              let newLi = document.createElement("li");
+                            
+                            
+                              //2. 组装
+                            
+                              oUl.appendChild(newLi)
+                            
+                            
+                              for (let i = 0; i &lt; aLi.length; i++) {
+                            
+                                aLi[i].addEventListener("click", function () {
+                            
+                                  this.style.backgroundColor = "pink"
+                            
+                                })
+                            
+                              }
+                            
+                            })
+                            </code></pre>
+                            <br/>
+                            <p>## 事件兼容</p>
+                            <br/>
+                            <ul>
+                            <li>既要适配标准浏览器 又要适配IE8以下非标准浏览器</li>
+                            <li>在标准浏览器中 只支持 addEventListener 意味着在这个客户端中 没有attachEvent这个函数</li>
+                            <li>在非标准浏览器中 只支持 attachEvent 意味着在这个客户端中 没有addEventListener这个函数</li>
+                            <li>装饰者模式</li>
+                            </ul>
+                            
+                            <p>例： <br>
+                                        var oDiv = document.getElementById("div1");</p>
+                            
+                            <pre><code>        console.log(window.addEventListener)
+                            
+                                    console.log(window.attachEvent)
+                            
+                                    // oDiv.addEventListener("click", function() {
+                            
+                                    //   this.style.backgroundColor = "pink"
+                            
+                                    // }, true)
+                            
+                                    // oDiv.attachEvent("onclick", function() {
+                            
+                                    //   oDiv.style.backgroundColor = "pink"
+                            
+                                    // })
+                            
+                                    if(window.addEventListener) {
+                            
+                                      //只有标准浏览器的用户会运行这个代码
+                            
+                                      oDiv.addEventListener("click", function () {
+                            
+                                        this.style.backgroundColor = "pink"
+                            
+                                      }, true)
+                            
+                                    } else if(window.attachEvent) {
+                            
+                                      //只有非标准浏览器的用户会运行这里的代码
+                            
+                                      oDiv.attachEvent("onclick", function () {
+                            
+                                        oDiv.style.backgroundColor = "pink"
+                            
+                                      })
+                            
+                                    }
+                            </code></pre>
+                            
+                            <p><strong>bindEvent()事件兼容方法</strong> <br>
+                                        /** 
+                                             * 事件兼容代码
+                                         * 
+                                             * @param ele {HTMLElement} 事件绑定的标签
+                                         *
+                                             * @param type {String} 事件的类型的名称 
+                                         * 
+                                             * @param callback {Function} 回调函数 
+                                         * 
+                                             * @param useCapture {Boolean} 事件传播的方式(仅限标准浏览器)
+                                         * 
+                                             */
+                                            function bindEvent(ele, type, callback, useCapture) {</p>
+                            
+                            <pre><code>                if (window.addEventListener) {
+                            
+                                                //只有标准浏览器的用户会运行这个代码
+                            
+                                                ele.addEventListener(type, callback, useCapture)
+                            
+                                            } else if (window.attachEvent) {
+                            
+                                                //只有非标准浏览器的用户会运行这里的代码
+                            
+                                                ele.attachEvent("on" + type, callback)
+                            
+                                            } else {
+                            
+                                                //连attachEvent 都不支持的适配
+                            
+                                                _type = "on" + type;    //onclick
+                            
+                                                ele[_type] = callback   //ele.onclick = function() {}
+                            
+                                            }
+                            
+                                        }
+                            
+                                        var oDiv = document.getElementById("div1");
+                            
+                                        //绑定一个鼠标进入事件
+                            
+                                        bindEvent(oDiv, "mouseenter", function() {
+                            
+                                            oDiv.style.backgroundColor = "red"
+                            
+                                        })
+                            
+                                        //绑定一个鼠标离开事件
+                            
+                                        bindEvent(oDiv, "mouseleave", function() {
+                            
+                                            oDiv.style.backgroundColor = "green"
+                            
+                                        })
+                            
+                                        //绑定一个鼠标点击事件
+                            
+                                        bindEvent(oDiv, "click", function() {
+                            
+                                            oDiv.style.backgroundColor = "yellow"
+                            
+                                        })
+                            </code></pre>
+                            
+                            <p>————————————————————————————————————
+                             ## 视图距离</p>
+                            <br/>
+                            <ol>
+                            <li>offset
+                            offset 指偏移，包括这个元素在文档中占用的所有显示宽度，包括滚动条、padding、border，不包括overflow隐藏的部分</li>
+                            </ol>
+                            <br/>
+                            <p>offsetParent属性返回一个对象的引用，这个对象是距离调用offsetParent的父级元素中最近的（在包含层次中最靠近的），并且是已进行过CSS定位的容器元素。 如果这个容器元素未进行CSS定位, 则offsetParent属性的取值为根元素的引用。</p>
+                            <br/>
+                            <p>如果当前元素的父级元素中没有进行CSS定位（position为absolute/relative），offsetParent为body
+                            如果当前元素的父级元素中有CSS定位（position为absolute/relative），offsetParent取父级中最近的元素
+                            obj.offsetWidth 指 obj 控件自身的绝对宽度，不包括因 overflow 而未显示的部分，也就是其实际占据的宽度，整型，单位：像素。</p>
+                            <br/>
+                            <p>offsetWidth = border-width*2+padding-left+width+padding-right</p>
+                            <br/>
+                            <p>obj.offsetHeight 指 obj 控件自身的绝对高度，不包括因 overflow 而未显示的部分，也就是其实际占据的高度，整型，单位：像素。</p>
+                            <br/>
+                            <p>offsetHeight = border-width*2+padding-top+height+padding-bottom</p>
+                            <br/>
+                            <p>obj.offsetTop 指 obj 相对于版面或由 offsetParent 属性指定的父坐标的计算上侧位置，整型，单位：像素。</p>
+                            <br/>
+                            <p>offsetTop= offsetParent的padding-top + 中间元素的offsetHeight + 当前元素的margin-top</p>
+                            <br/>
+                            <p>obj.offsetLeft 指 obj 相对于版面或由 offsetParent 属性指定的父坐标的计算左侧位置，整型，单位：像素。</p>
+                            <br/>
+                            <p>offsetLeft= offsetParent的padding-left + 中间元素的offsetWidth + 当前元素的margin-left</p>
+                            <br/>
+                            <ol>
+                            <li>scroll</li>
+                            </ol>
+                            <br/>
+                            <p>scroll指滚动，包括这个元素没显示出来的实际宽度，包括padding，不包括滚动条、border</p>
+                            <br/>
+                            <p>scrollHeight 获取对象的滚动高度，对象的实际高度；</p>
+                            <br/>
+                            <p>scrollLeft 设置或获取位于对象左边界和窗口中目前可见内容的最左端之间的距离</p>
+                            <br/>
+                            <p>scrollTop 设置或获取位于对象最顶端和窗口中可见内容的最顶端之间的距离</p>
+                            <br/>
+                            <p>scrollWidth 获取对象的滚动宽度</p>
+                            <br/>
+                            <ol>
+                            <li>client</li>
+                            </ol>
+                            <br/>
+                            <p>client指元素本身的可视内容，不包括overflow被折叠起来的部分，不包括滚动条、border，包括padding</p>
+                            <br/>
+                            <p>clientWidth 对象可见的宽度，不包括滚动条等边线，会随窗口的显示大小改变</p>
+                            <br/>
+                            <p>clientHeight 对象可见的高度</p>
+                            <br/>
+                            <p>clientTop、clientLeft 这两个返回的是元素周围边框的厚度，一般它的值就是0。因为滚动条不会出现在顶部或者左侧</p>
+                            <br/>
+                            <ul>
+                            <li><p>视图距离查询方法</p>
+                            <br/>
+                            <p>查询整个盒子模型的位置数据：</p>
+                            <br/>
+                            <p>console.log(oDiv.getBoundingClientRect());</p>
+                            <br/>
+                            <p>//width 100 表达的是元素的宽度</p>
+                            <br/>
+                            <p>//height 150 表达的是元素的高度</p>
+                            <br/>
+                            <p>//x: 200 表达的是左上角和浏览器左边框的距离</p>
+                            <br/>
+                            <p>//y: 100 表达的是左上角和浏览器上边框的距离</p>
+                            <br/>
+                            <p>// left: 200 表达的是元素左边距和浏览器左边框的距离</p>
+                            <br/>
+                            <p>// top: 100 表达的是元素上边距和浏览器上边框的距离</p>
+                            <br/>
+                            <p>// right 300</p>
+                            <br/>
+                            <p>// bottom 250</p></li>
+                            </ul>
+                       </div>
+                       <div>
+                            <h2>Array - 数组 【】</h2>
+                            <br/>
+                            <ul>
+                            <li><p>数组的形式</p>
+                            <br/><br/>
+                            <ul><li><p>字面量初始化  :  let arr = [ ]</p></li>
+                            <li><p>构造函数函数初始化： let arr  =  new Array ( ) ;</p></li></ul>
+                            <br/><br/>
+                            <p>通过Array工厂来构建一个arr变量 arr变量就是一个数组对象</p></li>
+                            <li><p>静态方法</p>
+                            <br/><br/>
+                            <ul><li><p>Array .length ：length是Array的实例属性。返回或设置一个数组中的元素个数，每一个数组都会自带这个属性</p></li>
+                            <li><p>Array.form() :从一个类似数组或可迭代对象创建一个新的,浅拷贝的数组实例。（注意：该方法会改变源数组）</p></li>
+                            <li><p>Array.isArray() : 用于确定传递的值是否是一个Array。用于判断是否是一个数组</p></li>
+                            <li><p>Array.of( )  :  Array.of()和Array 构造函数之间的区别在于处理整数参数：Array.of(7)创建一个具有单个元素的数组 ，而Array（7）chua创建一个长度为7的空数组。</p></li></ul>
+                            <br/><br/>
+                            <p><code>ASN.1<br/><br/>
+                            Array.of(7);       // [7] <br/><br/>
+                            Array(7);          // [ , , , , , , ]<br/><br/>
+                            </code></p></li>
+                            <li><p>动态方法</p>
+                            <br/><br/>
+                            <ul><li><p>栈方法</p></li>
+                            <li><p>Array.prototype.push()  : 在数组的末尾添加一个或者多个新内容（return Number）  返回新数组的长度</p></li>
+                            <li><p>Array.prototype.pop()  :在数组的末尾删除一个元素</p></li>
+                            <li><p>队列方法</p></li>
+                            <li><p>Array.prototype.unshift () :在数组的头部添加一个或者多个数据  返回一个新数组的长度</p></li>
+                            <li><p>Array.prototype.shift() :在数组的头部删除第一个元素</p></li>
+                            <li><p>Array.prototype.reverse() :数组反转方法 ，会改变源数组</p>
+                            <br/><br/>
+                            <p>let arr = ["c", "b", "a"]</p>
+                            <br/><br/>
+                            <p>function fn(arr) {</p></li></ul>
+                            <br/><br/>
+                            <p>​      arr.reverse()   //["a", "b", "c"]</p>
+                            <br/><br/>
+                            <p>​    }</p>
+                            <br/><br/>
+                            <ul><li><p>Array.prototype.indexOf()   ： 根据元素查询第一个满足条件的下标 懒汉模式</p>
+                            <br/><br/>
+                            <p>arr.indexOf(searchElement: any[, fromIndex: number])</p></li></ul>
+                            <br/><br/>
+                            <p>​    let arr = ["h", "e", "l", "l", "o", "w", "o", "r", "l", "d"];</p>
+                            <br/><br/>
+                            <p>​    console.log(arr.indexOf("e"))     // 1</p>
+                            <br/><br/>
+                            <p>​    console.log(arr.indexOf("l"))     // 2</p>
+                            <br/><br/>
+                            <p>​    console.log(arr.indexOf("l", 4))     // 8</p>
+                            <br/><br/>
+                            <p>​    console.log(arr.indexOf("z"))     // 特别的 如果没有任何元素满足条件的话 那么返回的就是</p>
+                            <br/><br/>
+                            <ul><li><p>Array.prototype.lastindexOf()   ： 根据元素查询最后一个满足条件的下标 懒汉模式（从右想左查找到第一个）</p></li>
+                            <li><p>Array.prototype.includes()  : 查询数组的某个元素是否存在   返回boolean类型</p></li></ul>
+                            <br/><br/>
+                            <p>​     let arr = ["北京", "上海", "深圳"]</p>
+                            <br/><br/>
+                            <p>​    console.log(arr.includes("上海"))   //true  </p>
+                            <br/><br/>
+                            <p>​    console.log(arr.includes("广州"))   //false</p>
+                            
+                            <ul><li>Array.prototype.concat()  : 数组连接   将两个或更多的数组归并成一个数组</li></ul>
+                            
+                            <p>语法：arr.concat(arr1: array[, arr2: array[, arr3: array]])</p>
+                            
+                            <ul><li>Array.prototype.slice()</li></ul>
+                            
+                            <p>slice(start: number, end:number) start: 开始截取的位置 end: 结束截取的位置 return 是一个新子数组</p>
+                            
+                            <p>​    //对数组做切割 切割出一个子数组</p>
+                            
+                            <p>​    let arr = ["北京", "上海", "深圳", "广州", "天津"]</p>
+                            
+                            <p>​    let newArr = arr.slice(1, 4)    //包头不包尾</p>
+                            
+                            <ul><li>Array.prototype.splice ()  增/删/改</li></ul>
+                            
+                            <p>arr.splice(start: number[, deleteCount: number[, item1: any[, item2: any[, ....]]]])</p>
+                            
+                            <p>​    start 开始操作的下标</p>
+                            
+                            <p>​    deleteCount 删除的个数</p>
+                            
+                            <p>​    item1,item2,item3.... 待新增的内容</p>
+                            
+                            <p>特别的 我们要删除数组 中任意位置的一个元素 基本语法是 arr.splice(i, 1)</p>
+                            
+                            <ul><li><p>Array.prototype.flat() : 数组扁平化</p>
+                            
+                            <p>let arr = [1, [2, 2], 1]      //[1, 2, 2, 1]  </p></li></ul>
+                            
+                            <p>​    console.log(arr.flat(Infinity))</p>
+                            
+                            <ul><li>Array.prototype.sort() : 数组排序方法</li></ul>
+                            
+                            <p>let arr = ["A", "B", "B", "B", "D", "C", "D", "B"];</p>
+                            
+                            <p>​    let newArr = arr.sort();</p>
+                            
+                            <p>​    console.log(newArr)</p>
+                            
+                            <ul><li><p>Array.from()</p>
+                            
+                            <ol><li>强转数组</li></ol></li></ul>
+                            
+                            <p>​    2. 遍历该数组内容,达到某种目的</p>
+                            
+                            <p>​    Array.from(arrayLike:必须是一个类数组||数组 [, mapFn: function 回调函数表示每一个数组元素都会使用一次这个回调函数[, thisArg: 表示this的指向]])</p>
+                            
+                            <p>Array.from() 只能遍历数组(类数组)</p>
+                            
+                            <ul><li><p>Array.every()</p>
+                            
+                            <p>arr.every(callback(element: any, index: number, array: array): function)</p>
+                            
+                            <p>callback 回调函数 表示每一个元素都会经过这个回调函数</p>
+                            
+                            <p>element 数组中的每个元素</p>
+                            
+                            <p>index 数组中的每个下标</p>
+                            
+                            <p>arr 就是被遍历的源数组</p></li>
+                            <li><p>Array.some()</p></li></ul>
+                            
+                            <p>方法测试数组中是不是至少有1个元素通过了被提供的函数测试。它返回的是一个Boolean类型的值。</p>
+                            
+                            <p>const array = [1, 2, 3, 4, 5];</p>
+                            
+                            <p>// checks whether an element is even<br/>
+                            const even = (element) => element % 2 === 0;</p>
+                            
+                            <p>console.log(array.some(even));<br/>
+                            // expected output: true</p>
+                            
+                            <ul><li>Array.filter() 利用一个新数组来过滤</li></ul>
+                            
+                            <p>let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];</p>
+                            
+                            <p>let result = arr.filter(e => e % 2 === 0)</p>
+                            
+                            <p>console.log(result)</p>
+                            
+                            <ul><li>Array.prototype.forEach()</li></ul>
+                            
+                            <p>callback 回调函数 对数组arr中所有元素都做一次函数操作</p>
+                            
+                            <p>element 当前被遍历的元素 "张三" "李四" "王五"</p>
+                            
+                            <p>index 当前被遍历的下标 0 1 2</p>
+                            
+                            <p>array 被遍历的源数组 ["张三", "李四", "王五"]</p>
+                            
+                            <p>没有返回值 他的返回值 永远默认都是undefined</p>
+                            
+                            <ul><li><p>Array.prototype.map()  ：和forEach（）相反 同样是遍历数组 但是有返回值</p></li>
+                            <li><p>keys values entires for...of(可以遍历可迭代对象) ES6</p></li></ul>
+                            
+                            <p>let arr = ['a', 'b', 'c'];</p>
+                            
+                            <p>​    //根据arr的键们 来遍历键 每次得到的值 是当前被遍历的键</p>
+                            
+                            <p>​    for(let key of arr.keys()) {</p>
+                            
+                            <p>​      console.log(key)    //0 1 2</p>
+                            
+                            <p>​    } </p>
+                            
+                            <p>​    for(let value of arr.values()) {</p>
+                            
+                            <p>​      console.log(value)    //'a' 'b' 'c'</p>
+                            
+                            <p>​    } </p>
+                            
+                            <p>​    for(let [key, value] of arr.entries()) {</p>
+                            
+                            <p>​      console.log(<code>这次的键是${key}</code>)</p>
+                            
+                            <p>​      console.log(<code>这次的值是${value}</code>)</p>
+                            
+                            <p>​    }</p>
+                            
+                            <ul><li>Array.sort() ： 数组排序方法</li></ul>
+                            
+                            <p>ort(callback(prev, next)) 对数组做排序</p>
+                            
+                            <p>let arr = ["apple", "cherry", "banana", "AA", "AB", "AC", 100, 200, " "]</p>
+                            
+                            <p>console.log(arr2.sort())    //[" ", 100, 200, "AA", "AB", "AC", "apple", "banana", "cherry"]</p>
+                            
+                            <ul><li>数组去重方法</li></ul>
+                            
+                            <p>​    let arr = ["a", "b", "a", "a", "b", "c", "d", "c"]</p>
+                            
+                            <p>​    let newArr = [...new Set(arr)]</p>
+                            
+                            <p>​    console.log(newArr)</p>
+                            
+                            <ul><li><strong>join()</strong> 方法将一个数组（或一个类数组对象）的所有元素连接成一个字符串并返回这个字符串。如果数组只有一个项目，那么将返回该项目而不使用分隔符。</li></ul>
+                            
+                            <p>const elements = ['Fire', 'Air', 'Water'];</p>
+                            
+                            <p>console.log(elements.join());<br/>
+                            // expected output: "Fire,Air,Water"</p>
+                            
+                            <p>和相对应：String.prototype.split(separator) ：分割 将一个完整的字符串分割成若干个部分的数组</p></li>
+                            <li><p>结构赋值</p>
+                            
+                            <p>对右边做getter 对左边做setter 依次对相应的内容直接赋值</p>
+                            
+                            <p>然后依次赋值 0号位对应0号位</p>
+                            
+                            <p>let a = "可乐";</p>
+                            
+                            <p>let b = "牛奶";</p>
+                            
+                            <p>//[a, b] = ["牛奶", "可乐"]</p>
+                            
+                            <p>[a, b] = [b, a];</p></li>
+                            </ul>
+                            <br/>
+                            <h1>String - 字符串</h1>
+                            <br/>
+                            <ul>
+                            <li><p>字符串的声明：let str = "abcde"     //字面量定义一个字符串</p></li>
+                            <li><p>遍历方法</p>
+                            <br/>
+                            <ol><li><p>for</p></li>
+                            <li><p>while</p>
+                            <br/>
+                            <p>3 .dowhile</p></li>
+                            <li><p>for-in 建议对象</p></li>
+                            <li><p>for-of 类数组（ES6新增方法）</p></li>
+                            <li><p>Array.from() Array</p></li>
+                            <li><p>forEach Array</p></li>
+                            <li><p>map Array</p></li>
+                            <li>keys values entires for...of(可以遍历可迭代对象) ES6</li></ol></li>
+                            <li><p>字符串方法</p>
+                            
+                            <ul><li><p>String.prototype.includes()  : 查询数组的某个元素是否存在   返回boolean类型</p>
+                            
+                            <p>let str = "abcde";      //字符串</p>
+                            
+                            <p>let substr1 = "bcd";    //子串</p>
+                            
+                            <p>console.log(str.includes(substr1))     //true</p></li>
+                            <li><p>String.prototype.IndexOf()   ： 根据元素查询第一个满足条件的下标 懒汉模式</p></li></ul>
+                            
+                            <p>let str = "hello world"</p>
+                            
+                            <p>console.log(str.indexOf("l"))     //  2</p>
+                            
+                            <ul><li>Array.prototype.lastIndexOf()   ： 根据元素查询第一个满足条件的下标 懒汉模式</li></ul>
+                            
+                            <p>console.log(str.lastIndexOf("l"))     //  9</p>
+                            
+                            <ul><li>String.prototype.slice(start: number[, end: number])</li></ul>
+                            
+                            <p>​    String.prototype.substring(start: numbe[, end:number])</p>
+                            
+                            <p>​    start 开始截取的位置</p>
+                            
+                            <p>​    end 结束截取的位置 如果不写 默认截取到底</p>
+                            
+                            <p>​    包头不包尾</p>
+                            
+                            <p>let str = "hello world"</p>
+                            
+                            <p>console.log(str.slice(0, 5))    //"hello"</p>
+                            
+                            <p>console.log(str.substring(0, 5))    //"hello"</p>
+                            
+                            <ul><li><p>toUpperCase()【大写】 &amp; toLowerCase()【小写】 来转换字母大小写</p>
+                            
+                            <p>let str = "abc";</p></li></ul>
+                            
+                            <p>​    console.log(str.toUpperCase())    //"ABC" </p>
+                            
+                            <p>​    </p>
+                            
+                            <p>​    let str2 = "ABC";</p>
+                            
+                            <p>​    let result = str2.toLowerCase();    //"abc"</p>
+                            
+                            <p>​    console.log(result)</p>
+                            
+                            <ul><li>String.prototype.startsWith(sub: string, startIndex: number) return boolean</li></ul>
+                            
+                            <p>String.prototype.endsWith(sub: string, startIndex: number) return boolean</p>
+                            
+                            <p>判断字符串是否以该子串开头/结尾</p>
+                            
+                            <p>startIndex 表示从哪里识别开头</p>
+                            
+                            <p>let str = "好好学习,天天向上";</p>
+                            
+                            <p>console.log(str.startsWith("好好学习"));    //true</p>
+                            
+                            <p>console.log(str.startsWith("瞎逼学习"));    //false</p>
+                            
+                            <ul><li><p>str.trim（）：去除两边空格</p>
+                            
+                            <p>let str = "    a b c    "</p>
+                            
+                            <p>console.log(str.trim())   //去除两边空格  </p></li>
+                            <li><p>String.prototype.concat()  : 字符串连接   将两个或更多的数组归并成一个字符串 和 + 号连接字符串相同意思</p></li>
+                            <li><p>String.prototype.split(separator) ：分割 将一个完整的字符串分割成若干个部分的数组</p></li></ul>
+                            
+                            <p>和Array.prototype.join()  相对应 ：连接 将若干个部分的数组连接一个完整的字符串</p>
+                            
+                            <ul><li><p>正则可以使用到的方法</p></li>
+                            <li><p>```
+                            str.replace(regexp|substr, newSubStr|function)：方法返回一个由替换值（replacement）替换一些或所有匹配的模式（pattern）后的新字符串。模式可以是一个字符串或者一个正则表达式，替换值可以是一个字符串或者一个每次匹配都要调用的回调函数。
+                            原字符串不会改变。</p>
+                            
+                            <p>var p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';</p>
+                            
+                            <p>var regex = /dog/gi;</p>
+                            
+                            <p>console.log(p.replace(regex, 'ferret'));<br/>
+                            // expected output: "The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?"</p>
+                            
+                            <p>console.log(p.replace('dog', 'monkey'));<br/>
+                            // expected output: "The quick brown fox jumps over the lazy monkey. If the dog reacted, was it really lazy?"
+                            ```</p></li></ul></li>
+                            <li><p><code>
+                            str.search(regexp) ：search() 方法执行正则表达式和 String 对象之间的一个搜索匹配。
+                            </code></p></li>
+                            <li><p><code>
+                            str.match(regexp)： match() 方法检索返回一个字符串匹配正则表达式的的结果。
+                            </code></p></li>
+                            </ul>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <footer>
+        <p>
+            <a href="#">IDOLT微论言</a><span> </span><a href="#">粤ICP备20009919号-1</a>
+        </p>
+    </footer>
+     <div class="top">
+        <a href="javascript:;" id="btn" title="回到顶部">
+            <img src="./img/top.png" alt="">
+        </a>
+    </div>
+    <!-- js链接 -->
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script>
+         $(document).ready(function(){
+            $(".content_pics-list ul li").click(function(){
+                $(this).addClass("active").siblings("li").removeClass("active")
+                $(".content_pics-item div").removeClass("active")
+                .eq($(this).index()).addClass("active");
+            })
+
+
+            //首先将#btn隐藏
+            $("#btn").hide();
+            //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
+            $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 50) {
+                $("#btn").fadeIn(200);
+                } else {
+                $("#btn").fadeOut(200);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#btn").click(function() {
+                $('body,html').animate({
+                scrollTop: 0
+                },
+                500);
+                return false;
+            });
+            });
+        })
+    </script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
